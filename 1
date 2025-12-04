@@ -1137,7 +1137,7 @@ Section7:Button("多个传送", function()
       end
   end
 end)
-Section7:Button("一键传送此类型", function()
+--[[Section7:Button("一键传送此类型", function()
   for i,model in pairs(game.Workspace.PlayerModels:GetChildren()) do
     if model:FindFirstChild("Owner") and model.Owner.Value == game.Players[player] then
       if model:FindFirstChild("Type") and model:FindFirstChild("Type").Value == type then
@@ -1158,6 +1158,7 @@ Section7:Button("一键传送此类型", function()
     end
   end
 end)
+]]
 Section7:Button("一键传送所有类型", function()
   for i,model in pairs(game.Workspace.PlayerModels:GetChildren()) do
     if model:FindFirstChild("Owner") and model.Owner.Value == game.Players[player] then
